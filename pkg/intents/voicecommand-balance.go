@@ -18,7 +18,7 @@ func Balance_Register(intentList *[]IntentDef) error {
 	utterances[LOCALE_ITALIAN] = []string{"bilancia"}
 	utterances[LOCALE_SPANISH] = []string{"escala de peso"}
 	utterances[LOCALE_FRENCH] = []string{"échelle de poids"}
-	utterances[LOCALE_GERMAN] = []string{"Gewichtsskala"}
+	utterances[LOCALE_GERMAN] = []string{"balance"}
 
 	var intent = IntentDef{
 		IntentName:            "extended_intent_hello_world",
