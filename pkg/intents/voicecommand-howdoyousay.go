@@ -15,7 +15,7 @@ func HowDoYouSay_Register(intentList *[]IntentDef) error {
 	utterances[LOCALE_ITALIAN] = []string{"come si dice"}
 	utterances[LOCALE_SPANISH] = []string{"como dicen"}
 	utterances[LOCALE_FRENCH] = []string{"comme on dit"}
-	utterances[LOCALE_GERMAN] = []string{"wie sie"}
+	utterances[LOCALE_GERMAN] = []string{"wie sagt man"}
 
 	var intent = IntentDef{
 		IntentName:            "extended_intent_how_do_you_say",
@@ -26,7 +26,7 @@ func HowDoYouSay_Register(intentList *[]IntentDef) error {
 	}
 	*intentList = append(*intentList, intent)
 
-	addLocalizedString("STR_HOWDOYOUSAY_HOW_DO_YOU_SAY", []string{"how do you say ", "come si dice ", "como dicen ", "comme on dit ", "wie sie "})
+	addLocalizedString("STR_HOWDOYOUSAY_HOW_DO_YOU_SAY", []string{"how do you say ", "come si dice ", "como dicen ", "comme on dit ", "wie sagt man "})
 	addLocalizedString("STR_HOWDOYOUSAY_IN", []string{" in ", " in ", " en ", " en ", " auf "})
 
 	return nil
